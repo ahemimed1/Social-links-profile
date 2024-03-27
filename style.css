@@ -1,0 +1,114 @@
+:root {
+    /*color*/
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+    /*font */
+    --p:14px;
+}
+*{
+    padding:0 ;
+    margin: 0;
+    font-family: 'inter',sans-serif;
+    box-sizing: border-box;
+    color: var(--White);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--Off_Black);
+}
+.container{
+    background: var(--Dark_Grey);
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.img{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+h2{
+    color: var(--White);
+    font-size: 26px;
+    font-weight: 700;
+}
+h5{
+    font-size: 14px;
+    color: var(--Green);
+    font-weight: 400;
+}
+p{
+    font-size: var(--p);
+    margin-top: 10px;
+
+color: rgba(255, 255, 255, 0.699);}
+.botton{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    background: var(--Grey);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+button:hover{
+    color: var(--Dark_Grey);
+    background: var(--Green);
+}
+.attribution{
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+a{
+    color: rgba(255, 255, 255, 0.5);
+}
